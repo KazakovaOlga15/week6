@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник для владельцев животных</title>
+</head>
+<body>
+    <h1>Опросник для владельцев животных</h1>
+	<form method="post">
+		<label for="name">Кличка питомца:</label>
+		<input type="text" id="name" name="name" required>
+
+<div>
+    <label for="owner-name">Имя владельца:</label>
+    <input type="text" id="owner-name" name="owner-name" required>
+    </div>
+
+<div>
+    <label for="email">Адрес электронной почты:</label>
+	<input type="email" id="email" name="email" required>
+</div>
+
+<div>
+    <label for="phone">Номер телефона:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+</div>
+
+<div>
+    <label for="breed">Порода питомца:</label>
+    <select name="breed" id="breed" required>
+    <option value="">Выберите</option>
+    <option value="dog">Собака</option>
+    <option value="cat">Кошка</option>
+    <option value="bird">Птица</option>
+    <option value="fish">Рыба</option>
+    <option value="other">Другое</option>
+    </select>
+</div>
+
+<div>
+	<label for="type">Чем питается:</label>
+	<input type="checkbox">Сухой корм 
+	<input type="checkbox">Влажный корм 
+    <input type="checkbox">Натуральный корм 
+</div>
+    
+<div>
+    <label for="pet-gender">Пол:</label>
+    <input type="radio" id="pet-gender-male" name="pet-gender" value="male" required>
+    <label for="pet-gender-male">Самец</label>
+    <input type="radio" id="pet-gender-female" name="pet-gender" value="female" required>
+    <label for="pet-gender-female">Самка</label>
+</div>
+
+<div>
+    <label for="comment">Комментарий владельца:</label>
+</div>
+    <textarea name="comment" cols="40" rows="15"></textarea>
+</div>
+
+
+<div>
+    <label for="file">Приложить фото питомца:</label>
+    <input type="file" id="avatar" name="avatar"
+</div>
+        
+<div>
+    <input type="submit" value="Отправить">
+    </div>
+	</form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,125 @@
+<style>
+
+/*Шапка страницы*/
+.menu {
+    display: flex;
+    background-color: rgb(170, 169, 169);
+    border: 1px solid red;
+    height: 50px;
+    justify-content: center;
+}
+
+/*Основная часть*/
+.content {
+    display: flex;
+    border: 1px solid red;
+    width: 61%;
+    background-color: bisque;
+    height: 200px;
+    justify-content: center;
+}
+
+.article_1,
+.article_2,
+.article_3 {
+    border: 1px solid red;
+    background-color: rgb(229, 177, 113);
+}
+
+.flexcontainer {
+    display: flex;
+    height: 100px;
+    width: 110vh;
+    justify-content: center;
+    align-items: stretch;
+    position: absolute;
+    left: 120px;
+    bottom: 450px;
+    margin-bottom: 40px;
+
+}
+
+
+
+/*Еще 1*/
+.article_1 {
+    width: 100%;
+
+}
+
+
+/*Еще 2*/
+.article_2 {
+    width: 100%;
+    margin-left: 20px;
+}
+
+/*Еще 3*/
+.article_3 {
+    width: 50%;
+    position: fixed;
+    top: 190px;
+    left: 120px;
+
+
+}
+
+/*Боковая область*/
+.nav {
+    display: flex;
+    background-color: rgb(88, 165, 90);
+    width: 40%;
+    position: absolute;
+    left: 110vh;
+    height: 200px;
+    justify-content: center;
+    
+    
+
+}
+
+.box {
+    padding-bottom: -20px;
+    padding-top: -20px;
+}
+
+.footer_1, 
+.footer_2,
+.footer_3,
+.footer_4
+    {
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100vh;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 40px;
+
+
+}
+
+.footer_2 {
+    margin-left: 20px;
+}
+
+.footer_3 {
+    margin-left: 20px;
+}
+
+.footer_4 {
+    margin-left: 20px;
+    
+}
+
+
+
+.podval {
+    display: flex;
+    border: 1px solid rgb(109, 108, 108);
+    background-color: rgb(109, 108, 108);
+
+}
+
+</style>

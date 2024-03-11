@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .header{
+        padding: 10px 15px;
+        background-color: rgb(4, 122, 201);
+        border: 1px solid rgb(11, 65, 99);
+        text-align: center;
+        font-size: 22px;
+        font-family: sans-serif;
+        color: white;
+        grid-area: header;
+    }
+    
+    .sidebar {
+        display: grid;
+        padding: 10px 15px;
+        background-color: rgb(4, 122, 201);
+        border: 1px solid rgb(11, 65, 99);
+        text-align: center;
+        font-size: 22px;
+        font-family: sans-serif;
+        color: white;
+        grid-area: aside;
+        
+    }
+    
+    .main {
+        
+        padding: 10px 15px;
+        background-color: rgb(4, 122, 201);
+        border: 1px solid rgb(11, 65, 99);
+        text-align: center;
+        font-size: 22px;
+        font-family: sans-serif;
+        color: white;
+        grid-area: main;
+    }
+    
+    .footer {
+        display: grid;
+        padding: 10px 15px;
+        background-color: rgb(4, 122, 201);
+        border: 1px solid rgb(11, 65, 99);
+        text-align: center;
+        font-size: 22px;
+        font-family: sans-serif;
+        color: white;
+        grid-area: footer;
+    }
+    
+    
+    .grid {
+        
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas:
+            "header header"
+            "aside main"
+            "footer footer";
+    }
+    
+    body {
+        margin: 0;
+        height: 100%;
+    }
+    
+    .footer_1 {
+        background-color: brown;
+    }
+    
+    .footer_2 {
+        background-color: rgb(193, 54, 54);
+    }
+    
+    .footer_3 {
+        background-color: rgb(233, 68, 68);
+    }
+    
+    .footer_4 {
+        background-color: rgb(238, 103, 103);
+    }
+    
+    .sidebar_1 {
+        background-color: rgb(11, 69, 12);
+    }
+    
+    .sidebar_2 {
+        background-color: rgb(19, 122, 21);
+    }
+    
+    .sidebar_3 {
+        background-color: rgb(34, 213, 37);
+    }
+    
+    .footer_1_2_3_4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .sidebar_1_2_3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "sidebar_1 sidebar_2"
+        "sidebar_3 sidebar_3";
+    }
+    
+    .sidebar_1 {
+        display: grid;
+    grid-area: sidebar_1;
+    }
+    
+    .sidebar_2 {
+        display: grid;
+    grid-area: sidebar_2;
+    }
+    
+    .sidebar_3 {
+        display: grid;
+    grid-area: sidebar_3;
+    }
+    
+    
+    
+    
+    
+        </style>
+
+
+
+
+<body>
+    <H1>Домашнее задание 6 неделя</H1>
+<div class="grid">
+    <header class="header">Шапка страницы</header>
+    <aside class="sidebar">Основная часть
+        <div class="sidebar_1_2_3">
+        <div class="sidebar_1">Еще 1</div>
+        <div class="sidebar_2">Еще 2</div>
+        <div class="sidebar_3">Еще 3</div>
+    </div>
+    </aside>
+    <main class="main">Боковая область</main>
+    <footer class="footer">
+        <div class="footer_1_2_3_4">
+        <div class="footer_1">Секция футера 1</div>
+        <div class="footer_2">Секция футера 2</div>
+        <div class="footer_3">Секция футера 3</div>
+        <div class="footer_4">Секция футера 4</div>
+    </div>
+    </footer>
+</div>
+</body>
+</html>
